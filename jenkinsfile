@@ -12,5 +12,10 @@ pipeline{
                 echo "Building simple maven project"
             }
         }
+        stage("Deploy in staging enviorment"){
+            steps{
+                echo "Building Deploying in staging enviorment"
+            }
+        }
     }
 }
