@@ -12,20 +12,5 @@ pipeline {
                     }
                 }
             }
-            stage('Deploy in staging enviorment'){
-                steps{
-                    echo "staging env job"
-                    build job:"Deploy-application-Staging"
-                }
-            }
-            stage('Deploy in Production enviorment'){
-                steps{
-                    timeout(time:5, unit:'DAYS'){
-                        input message:'Approve the PRODUCTION Deployment?'
-                    }
-                    echo "production env job"
-                    build job:"Deploy-application-Staging"
-                }
-            }
         }
 }
