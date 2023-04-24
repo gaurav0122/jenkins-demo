@@ -12,22 +12,5 @@ pipeline{
                 echo "Building simple maven project"
             }
         }
-        stage("Deploy"){
-            steps{
-                echo "Deploy in staging area"
-            }
-        }
-         stage("Deploy Production"){
-            steps{
-                echo "Deploy in production area"
-            }
-        }
-        stage("Deploy Production next"){
-            steps{
-                echo "Deploy in production area"
-            }
-        }
-       
     }
-
 }
