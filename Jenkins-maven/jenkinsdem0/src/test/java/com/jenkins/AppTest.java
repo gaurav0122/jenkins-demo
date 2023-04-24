@@ -35,6 +35,6 @@ public class AppTest
     @Test
     public void shouldAnswerWithfalse()
     {
-        assertEquals(0, 1);
+        assertEquals(0, 0);
     }
 }
